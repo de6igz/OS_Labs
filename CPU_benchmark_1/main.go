@@ -33,6 +33,6 @@ func runStressCommand(cpu int, method string, fileName string) {
 func main() {
 	for i := 1; i <= 15; i += 2 {
 		fileName := fmt.Sprintf("stress_test_cpu_gray_%d.txt", i)
-		runStressCommand(i, "gray", fileName)
+		runStressCommand(i, "decimal32", fileName)
 	}
 }
